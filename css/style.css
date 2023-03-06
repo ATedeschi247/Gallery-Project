@@ -50,6 +50,7 @@ body {
 #nav {
 	clear: both;
 	position: relative;
+	margin-top: 30px;
 }
 
 #prevPhoto {
@@ -60,8 +61,12 @@ body {
 #nextPhoto {
 	height: 42px;
 	width: 42px;
+	position: absolute;
+	right: 0px;
 }
-
+#nextPhoto:hover, #prevPhoto:hover {
+	opacity: 80%;
+}
 .details p {
 	margin-top: 20px;
 }
@@ -69,7 +74,7 @@ body {
 	border: 1px #000 dashed;
 	padding: 0px 10px;
 	margin: 20px 0px;
-	display: block !important;
+	/* display: block !important; */
 }
 
 /*Add CSS styles to rotate the element 90deg

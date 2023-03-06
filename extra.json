@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1652340658/EducationHub/photos/colosseum.jpg",
+            "imgLocation": "Italy",
+            "description": "Colosseum",
+            "date": "AD 70"
+        },
+        {
+            "imgPath": "https://www.planetware.com/wpimages/2020/01/germany-best-castles-nueschwanstein.jpg",
+            "imgLocation": "Germany",
+            "description": "Nueschwanstein Castle",
+            "date": "03/06/2023"
+        },
+        {
+            "imgPath": "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/2/1280/720/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/campaign/six-parks/walt-disney-world-six-parks-UK-16x9.jpg",
+            "imgLocation": "Florida",
+            "description": "Disneyworld",
+            "date": "03/06/2023"
+        },
+        {
+            "imgPath": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg",
+            "imgLocation": "Arizona",
+            "description": "Grand Canyon",
+            "date": "03/06/2023"
+        },
+        {
+            "imgPath": "https://fthspatpress.com/wp-content/uploads/2020/02/school.png",
+            "imgLocation": "New Jersey",
+            "description": "FTHS",
+            "date": "03/06/2023"
+        }
+    ]
+}

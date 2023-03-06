@@ -37,7 +37,7 @@ function swapPhoto() {
   photo = mImages.images[mCurrentIndex];
 	document.getElementById('photo').setAttribute('src', photo.imgPath);
   GalleryImage();
-  if(mCurrentIndex >= 12) {
+  if(mCurrentIndex >= 4) {
     mCurrentIndex = 0;
   } else {
     mCurrentIndex++;
@@ -58,8 +58,7 @@ var mJson;
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'images.json';
-
+var mUrl = 'extra.json';
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
 //@param A GalleryImage object. Use this method for an event handler for loading a gallery Image object (optional).
@@ -106,7 +105,23 @@ function GalleryImage() {
 document.querySelector('.moreIndicator').addEventListener('click', function() {
   if(this.classList.contains('rot90')) {
     this.classList.replace('rot90', 'rot270');
+    $( ".details" ).first().fadeToggle( "slow", "linear" );
+
   } else {
     this.classList.replace('rot270', 'rot90');
+    $( ".details" ).first().fadeToggle( "slow", "linear" );
+  }
+});
+
+document.querySelector('#nextPhoto').addEventListener('click', function() {
+  swapPhoto();
+});
+document.querySelector('#prevPhoto').addEventListener('click', function() {
+  if(mCurrentIndex == 1) {
+    mCurrentIndex = 4;
+    swapPhoto();
+  } else {
+    mCurrentIndex -= 2;
+    swapPhoto();
   }
 });
