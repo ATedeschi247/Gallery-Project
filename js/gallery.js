@@ -71,7 +71,7 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 
 $(document).ready( function() {                                             // This code searches for the 'extra.json' file via another XMLHttpRequest.
   mJson = new XMLHttpRequest();                                             // If it exists, sets mUrl to that extra.json file and runs fetchJSON.
-  mJson.open('GET', 'efxtra.json');                                          // Otherwise, it leaves mUrl as 'images.json' and runs fetchJSON as that.
+  mJson.open('GET', 'extra.json');                                          // Otherwise, it leaves mUrl as 'images.json' and runs fetchJSON as that.
   mJson.onreadystatechange = function() {
     if(mJson.readyState == 4 && mJson.status == 200) {
       mUrl = 'extra.json';
